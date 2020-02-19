@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.css" />
+		<title>Validando Formulários com Javascript</title>
+		<style type="text/css">
+			.msg-erro {
+				color: red;
+			}
+		</style>
+	</head>
+	<body class="container">
+		<h1 class="text-center">Validando Formulários JS</h1>
+		<form class="form" name="formSignUp">
+			<div class="form-group">
+				<span id="msg_erro" name="msg_erro" class="msg-erro">Erro</span>
+			</div>
+			<div class="form-group">
+				<label for="data">Nome</label>
+				<input type="text" name="nome" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="data">E-mail</label>
+				<input type="text" name="email" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="data">Senha</label>
+				<input type="password" name="senha" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="data">Confirm Senha</label>
+				<input type="password" name="confirm_senha" class="form-control" />
+			</div>
+
+			<button class="btn btn-primary" type="button" onclick="validar()">
+				Validar
+			</button>
+		</form>
+	</body>
+</html>
